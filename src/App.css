@@ -1,0 +1,107 @@
+html {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+table {
+  border: 1px solid lightgray;
+}
+
+tbody {
+  border-bottom: 1px solid lightgray;
+}
+
+th {
+  border-right: 1px solid lightgray;
+  padding: 2px 4px;
+}
+
+tfoot {
+  color: gray;
+}
+
+tfoot th {
+  font-weight: normal;
+}
+
+
+.mainClass {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  block-size: 93vh;
+  /* padding: 8px; */
+  overflow: hidden
+}
+
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  :root {
+    color-scheme: light dark;
+
+    @media (prefers-color-scheme: light) {
+      background-color: #fff;
+      color: #111;
+    }
+    @media (prefers-color-scheme: dark) {
+      background-color: hsl(0deg 0% 10%);
+      color: #fff;
+    }
+  }
+  #root {
+    grid-template-columns: auto 1fr;
+  }
+  .rdg.fill-grid {
+    block-size: 100%;
+  }
+  .rdg.small-grid {
+    block-size: 300px;
+  }
+  .rdg.big-grid {
+    block-size: 600px;
+  }
+  .rdg-cell.Select {
+    max-height: 30px;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+.filter-class-name {
+  inline-size: 100%;
+  padding: 0;
+  font-size: 14px;
+  height: 25px;
+}
+
+.root-class-name {
+  display: flex;
+  flex-direction: column;
+  block-size: 100%;
+  gap: 10px;
+}
+
+.root-class-name .rdg {
+  flex: 1;
+}
+
+.toolbar-class-name {
+  text-align: end;
+}
+
+.filter-cell {
+  line-height: 35px;
+  padding: 0;
+}
+
+.filter-cell div {
+  padding-block: 0;
+  padding-inline: 8px;
+}
+
+.filter-cell :first-child {
+  border-block-end: 1px solid var(--rdg-border-color);
+}
+
